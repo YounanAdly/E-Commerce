@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">E-Commerce</string>
+    <string name="create_a_new_account">Create A New Account</string>
+    <string name="email">Email…</string>
+    <string name="password">Password…</string>
+    <string name="create_account">Create Account</string>
+    <string name="back_to_login">Back To Login</string>
+    <string name="search">Search here…</string>
+    <string name="product_item">Product Item</string>
+    <string name="product_name_title"><![CDATA[Product Name & Title]]></string>
+    <string name="select_size">Select Size</string>
+    <string name="productSizeLarge">L</string>
+    <string name="productSizeMedium">M</string>
+    <string name="productSizeSmall">S</string>
+    <string name="productPrice">$130</string>
+    <string name="productTitle">Easy low top style. These guys shoes have stitched-on 3-Stripes that appear on the outer side. Subtle perforated 3-Stripes appear on the inner side.</string>
+    <string name="add_to_card">Add To Card</string>
+    <string name="addtobookmark">AddToBookMark</string>
+    <string name="home">Home</string>
+    <string name="cardItem">0</string>
+    <string name="welcomeText">Welcome User,\n Login to your account</string>
+    <string name="cardItem1">1</string>
+    <string name="productSize">Size - M</string>
+    <string name="card">Card</string>
+    <string name="login">Login</string>
+    <string name="searchNav">Search</string>
+    <string name="bookmark">BookMark</string>
+    <string name="logout">LogOut</string>
+    <string name="totalPrice">$230</string>
+    <string name="total">Total</string>
+    <string name="search_results">Search Results</string>
+
+</resources>

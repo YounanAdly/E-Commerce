@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.ui.Activity.ProductActivity">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backButtonBookMark"
+            android:layout_width="34dp"
+            android:layout_height="46dp"
+            android:layout_margin="22dp"
+            app:cornerRadius="8dp"
+            app:icon="@drawable/ic_arrow_back_black_24dp"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.AppCompat.ActionButton"
+            android:id="@+id/cardButtonBookMark"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_margin="22dp"
+            android:text="@string/cardItem"
+            android:textColor="@android:color/white"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/productImageBookMark"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#ECEEF0"
+            android:contentDescription="@string/product_item"
+            android:src="@drawable/productitem"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/productNameBookMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="17dp"
+            android:text="@string/product_name_title"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productImageBookMark" />
+
+        <TextView
+            android:id="@+id/productPriceBookMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/productPrice"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productNameBookMark" />
+
+        <TextView
+            android:id="@+id/productTitleBookMark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="22dp"
+            android:text="@string/productTitle"
+            android:textColor="#696969"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productPriceBookMark" />
+
+        <TextView
+            android:id="@+id/productSizeBookMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/select_size"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productTitleBookMark" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/productSizeSmallBookMark"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/productSizeSmall"
+            android:textColor="@android:color/black"
+            app:cornerRadius="12dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/productSizeMediumBookMark"
+            app:layout_constraintTop_toBottomOf="@id/productSizeBookMark" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/productSizeMediumBookMark"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/productsize"
+            android:text="@string/productSizeMedium"
+            android:textColor="@android:color/black"
+            app:cornerRadius="12dp"
+            app:layout_constraintLeft_toRightOf="@+id/productSizeSmallBookMark"
+            app:layout_constraintTop_toBottomOf="@id/productSizeBookMark" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/productSizeLargeBookMark"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/productSizeLarge"
+            android:textColor="@android:color/black"
+            app:cornerRadius="12dp"
+            app:layout_constraintLeft_toRightOf="@+id/productSizeMediumBookMark"
+            app:layout_constraintTop_toBottomOf="@id/productSizeBookMark" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addToCardBookMark"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="220dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/add_to_card"
+            android:textColor="@android:color/white"
+            app:cornerRadius="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
